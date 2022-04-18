@@ -16,8 +16,9 @@ export default function Menu({ navigation: { navigate }}){
                         <Text style={[styleMenu.textWhite]}>Pesquisar</Text>
                     </Box>
                 </Pressable>
+                
                 <Box style={[styleMenu.btn1]}>
-                    <Text style={[styleMenu.textWhite]}>Listar Todos</Text>
+                    <Text style={[styleMenu.textWhite]}>Login</Text>
                 </Box>
 
                 <Box style={[styleMenu.btn1]}>
