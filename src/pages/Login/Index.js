@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NativeBaseProvider, Box, ScrollView, Stack, Input, FormControl, Divider, Center, Button, Image } from "native-base";
 import { StyleSheet, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import style from './Style';
 
 const config = {
     dependencies: {
@@ -9,7 +10,7 @@ const config = {
     }
 }
 
-export default function Login(){
+export default function Login({ navigation: { navigate }}){
     const [login, setLogin] = useState();
     const [senha, setSenha] = useState();
 
@@ -49,7 +50,7 @@ export default function Login(){
                             </Box>
                             
                             <Box alignItems="center">
-                                <Button backgroundColor={'#15D36D'} size={'lg'} onPress={() => logar(login, senha)}>Logar</Button>
+                                <Button backgroundColor={'#15D36D'} size={'lg'} onPress={() => navigate("Menu")}>Logar</Button>
                             </Box>
                         </Stack>
                     </FormControl>
@@ -59,16 +60,3 @@ export default function Login(){
     )
 }
 
-
-const style = StyleSheet.create({
-    background:{
-        flex: 1,
-        justifyContent: 'center',
-        backgroundColor: '#1d4ed8'
-    },
-    boxForm: {
-        width: '100%',
-        maxWidth: 400,
-        alignSelf: 'center'
-    }
-})
