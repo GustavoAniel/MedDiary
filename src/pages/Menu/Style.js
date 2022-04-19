@@ -1,25 +1,38 @@
 import { StyleSheet } from "react-native";
 
 const styleMenu = StyleSheet.create({
+    btnsMenu: {
+        marginTop: 40,
+
+    },
     btn1: {
-        margin: 0,
-        backgroundColor: '#34d399',
-        marginHorizontal: 10,
-        marginVertical: 15,
+        width: 150,
+        height: 150,
+        shadowColor: '#171717',
+        shadowOffset: {width: 1, height: 4},
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
         borderRadius: 10,
-        padding: 13,
-        flexDirection: 'row',
-        justifyContent: 'center'
     },
     textWhite: {
         color: 'white',
+        fontSize: 20,
+        textAlign: 'center',
+        marginTop: 10
+    },
+    textWhiteTitulo: {
+        color: 'white',
         fontSize: 35,
-        textAlign: 'center'
     },
     textBlack: {
         color: 'black',
         fontSize: 35,
         textAlign: 'center'
+    },
+    iconBtn: {
+        alignSelf: 'center',
+        color: 'white',
+        marginTop: 20
     }
 })
 
