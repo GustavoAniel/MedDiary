@@ -1,6 +1,6 @@
 import { Box, Center, NativeBaseProvider, Pressable, Spacer, VStack, Stack } from "native-base";
 import { Text, View } from 'react-native';
-import style from "../../styles/Style";
+import { style } from "../../styles/Style";
 import styleMenu from './Style';
 import  IconMaterial  from "react-native-vector-icons/MaterialCommunityIcons";
 import IconAnt from 'react-native-vector-icons/AntDesign';
@@ -19,8 +19,8 @@ export default function Menu({ navigation: { navigate }}){
         <NativeBaseProvider config={config}>
             <Box style={[style.background]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}> 
 
-                <Box p={8} rounded={5} >
-                    <Text style={[styleMenu.textWhiteTitulo]}>Bom dia!</Text>
+                <Box rounded={5} >
+                    <Text style={[styleMenu.textWhiteTitulo]}>Bom dia Fulana!</Text>
 
                     
 
@@ -28,24 +28,28 @@ export default function Menu({ navigation: { navigate }}){
                         <VStack space={10}>              
                             <Stack direction='row' justifyContent='space-between'>
 
-                            
-                                <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#00FFF0', 'rgba(15, 193, 172, 0)'], start: [1, 0], end: [1, 1]}}}>
-                                    <Text style={[styleMenu.textWhite]}>Lembretes</Text>
+                                <Pressable onPress={() => navigate("Lembretes")}>
+                                    <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
+                                        <Text style={[styleMenu.textWhite]}>Lembretes</Text>
 
-                                    <IconMaterial name="bell" size={40} style={[styleMenu.iconBtn]} />
-                                </Box>
+                                        <IconMaterial name="bell" size={40} style={[styleMenu.iconBtn]} />
+                                    </Box>
+                                </Pressable>
+                                
+                                <Pressable>
+                                    <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
+                                        <Text style={[styleMenu.textWhite]}>Diário</Text>
 
-                                <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#00FFF0', 'rgba(15, 193, 172, 0)'], start: [1, 0], end: [1, 1]}}}>
-                                    <Text style={[styleMenu.textWhite]}>Diário</Text>
+                                        <IconAnt name="book" size={40} style={[styleMenu.iconBtn]} />
+                                    </Box>
+                                </Pressable>
 
-                                    <IconAnt name="book" size={40} style={[styleMenu.iconBtn]} />
-                                </Box>
                             </Stack>
 
                             <Stack direction='row' justifyContent='space-between'>
 
                             
-                                <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#00FFF0', 'rgba(15, 193, 172, 0)'], start: [1, 0], end: [1, 1]}}}>
+                                <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
                                     <Text  style={[styleMenu.textWhite]}>Medicamentos</Text>
 
                                     <IconAwesome name="briefcase-medical" size={40} style={[styleMenu.iconBtn]} />
