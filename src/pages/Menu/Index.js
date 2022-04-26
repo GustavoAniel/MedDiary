@@ -28,7 +28,7 @@ export default function Menu({ navigation: { navigate }}){
                         <VStack space={10}>              
                             <Stack direction='row' justifyContent='space-between'>
 
-                                <Pressable onPress={() => navigate("Lembretes")}>
+                                <Pressable onPress={() => navigate("Listar_Lembretes")}>
                                     <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
                                         <Text style={[styleMenu.textWhite]}>Lembretes</Text>
 

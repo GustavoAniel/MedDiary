@@ -17,6 +17,7 @@ const styleMenu = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         borderRadius: 10,
+        elevation: 20
     },
     textWhite: {
         color: 'white',

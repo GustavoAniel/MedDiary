@@ -7,7 +7,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import  Listar  from './src/pages/Listar_Todos/Index';
 import Menu from './src/pages/Menu/Index';
 import Login from './src/pages/Login/Index';
-import Lembretes from './src/pages/Lembretes/Index';
+import Listar_Lembretes from './src/pages/Lembretes/Listagem/Index';
+import Cadastrar_Lembretes from './src/pages/Lembretes/Cadastro/Index';
 
 const Stack = createStackNavigator();
 
@@ -19,7 +20,8 @@ export default function App(){
         <Stack.Screen name='Login' component={Login} />
         <Stack.Screen name='Listar' component={Listar} />
         <Stack.Screen name='Menu' component={Menu} />
-        <Stack.Screen name="Lembretes" component={Lembretes} />
+        <Stack.Screen name="Listar_Lembretes" component={Listar_Lembretes} />
+        <Stack.Screen name='Cadastrar_Lembretes' component={Cadastrar_Lembretes}/>
       </Stack.Navigator>
     </NavigationContainer>
     
