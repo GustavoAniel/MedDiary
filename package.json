@@ -26,7 +26,8 @@
     "react-native-svg": "12.1.1",
     "react-native-vector-icons": "^9.1.0",
     "react-native-web": "0.17.1",
-    "expo-linear-gradient": "~11.0.3"
+    "expo-linear-gradient": "~11.0.3",
+    "expo-calendar": "~10.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
