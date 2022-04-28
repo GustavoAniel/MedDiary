@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NativeBaseProvider, Box, Stack, Input, FormControl, Divider, Center, Button, Image, TextArea, Radio } from "native-base";
+import { NativeBaseProvider, Box, Stack, Input, FormControl, Divider, Center, Button, Image, TextArea, Radio, Select } from "native-base";
 import { StyleSheet, Text, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import style from './Style';
@@ -10,7 +10,7 @@ const config = {
     }
 }
 
-export default function Cadastrar_Lembretes({ navigation: { navigate }}){
+export default function Cadastrar_Lembretes({ navigation: { navigate, goBack }}){
     const [login, setLogin] = useState();
     const [senha, setSenha] = useState();
 
@@ -47,13 +47,18 @@ export default function Cadastrar_Lembretes({ navigation: { navigate }}){
                                 
                                 <Box>
                                     <FormControl.Label _android={{_text:{color: 'white', fontSize: 20}}}>Períodicidade</FormControl.Label>
-                                    <Input color='white'  />
+
+                                    <Select color={'white'} _light>
+                                        <Select.Item label='A cada hora'/>
+                                        <Select.Item label='A cada dia' />
+                                        <Select.Item label='A cada semana' />
+                                        <Select.Item label='Para sempre' />
+                                    </Select>
+
                                     <FormControl.HelperText _android={{_text:{color: '#DCDCDC'}}}>
-                                        De quanto em quanto tempo.
+                                        Insira o nome desse lembrete.
                                     </FormControl.HelperText>
-                                    <FormControl.ErrorMessage >
-                                        Atleast 6 characters are required.
-                                    </FormControl.ErrorMessage>
+
                                 </Box>
 
                                 <Box>
@@ -81,8 +86,8 @@ export default function Cadastrar_Lembretes({ navigation: { navigate }}){
                                 <Box>
                                     <FormControl.Label _android={{_text:{color: 'white', fontSize: 20}}}>Categoria</FormControl.Label>
                                     <Radio.Group>
-                                        <Radio value='1' my={1} color={'white'}>Lembrete</Radio>
-                                        <Radio value='2'>Remédio</Radio>
+                                        <Radio value='1' my={1} _android={{_text:{color: 'white'}}} colorScheme='primary'>Lembrete</Radio>
+                                        <Radio value='2' my={1}  _android={{_text:{color: 'white'}}} colorScheme='primary'>Remédio</Radio>
                                     </Radio.Group>
                                     
                                 </Box>
