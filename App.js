@@ -9,6 +9,7 @@ import Menu from './src/pages/Menu/Index';
 import Login from './src/pages/Login/Index';
 import Listar_Lembretes from './src/pages/Lembretes/Listagem/Index';
 import Cadastrar_Lembretes from './src/pages/Lembretes/Cadastro/Index';
+import Listar_Diario from './src/pages/Diario/Listagem/Index'
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App(){
         <Stack.Screen name='Menu' component={Menu} />
         <Stack.Screen name="Listar_Lembretes" component={Listar_Lembretes} />
         <Stack.Screen name='Cadastrar_Lembretes' component={Cadastrar_Lembretes}/>
+        <Stack.Screen name='Listar_Diario' component={Listar_Diario}/>
       </Stack.Navigator>
     </NavigationContainer>
     
