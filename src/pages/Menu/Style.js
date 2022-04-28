@@ -3,11 +3,10 @@ import { StyleSheet } from "react-native";
 const styleMenu = StyleSheet.create({
     btnsMenu: {
         marginTop: 40,
-        backgroundColor: 'white',
         height: '100%',
-        padding: 20,
+        padding: 10,
         borderTopLeftRadius: 20,
-        borderTopRightRadius: 20
+        borderTopRightRadius: 20,
     },
     btn1: {
         width: 150,
@@ -17,7 +16,8 @@ const styleMenu = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         borderRadius: 10,
-        elevation: 20
+        elevation: 20,
+        justifyContent: 'center'
     },
     textWhite: {
         color: 'white',
@@ -38,7 +38,25 @@ const styleMenu = StyleSheet.create({
     iconBtn: {
         alignSelf: 'center',
         color: 'white',
-        marginTop: 20
+    },
+    cardBtn: {
+        padding: 8,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        flexDirection: 'row',
+        marginVertical: 10
+    },
+    textBtn: {
+        fontSize: 30,
+        color: '#15A5D3',
+        textShadowColor: 'rgba(0, 0, 0, 0.25)',
+        textShadowRadius: 5,
+        textShadowOffset: {width: 1, height: 4},
+        textAlign: 'center'
+    },
+    boxTituloBtn:{
+        justifyContent: 'center',
+        flex: 1
     }
 })
 

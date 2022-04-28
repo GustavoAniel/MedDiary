@@ -1,6 +1,6 @@
 import { Box, Center, NativeBaseProvider, Pressable, Spacer, VStack, Stack } from "native-base";
 import { Text, View } from 'react-native';
-import { style } from "../../styles/Style";
+import { style, styleLembrete } from "../../styles/Style";
 import styleMenu from './Style';
 import  IconMaterial  from "react-native-vector-icons/MaterialCommunityIcons";
 import IconAnt from 'react-native-vector-icons/AntDesign';
@@ -25,39 +25,44 @@ export default function Menu({ navigation: { navigate }}){
                     
 
                     <Box style={[styleMenu.btnsMenu]}>
-                        <VStack space={10}>              
-                            <Stack direction='row' justifyContent='space-between'>
+                        
 
-                                <Pressable onPress={() => navigate("Listar_Lembretes")}>
-                                    <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
-                                        <Text style={[styleMenu.textWhite]}>Lembretes</Text>
-
-                                        <IconMaterial name="bell" size={40} style={[styleMenu.iconBtn]} />
-                                    </Box>
-                                </Pressable>
-                                
-                                <Pressable>
-                                    <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
-                                        <Text style={[styleMenu.textWhite]}>Diário</Text>
-
-                                        <IconAnt name="book" size={40} style={[styleMenu.iconBtn]} />
-                                    </Box>
-                                </Pressable>
-
-                            </Stack>
-
-                            <Stack direction='row' justifyContent='space-between'>
-
-                            
+                        <Pressable onPress={() => navigate("Listar_Lembretes")}>
+                            <Box style={[styleMenu.cardBtn]}>
                                 <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
-                                    <Text  style={[styleMenu.textWhite]}>Medicamentos</Text>
-
-                                    <IconAwesome name="briefcase-medical" size={40} style={[styleMenu.iconBtn]} />
+                                    <IconMaterial name="bell" size={50} style={[styleMenu.iconBtn]} />
                                 </Box>
+                                <Box style={[styleMenu.boxTituloBtn]}> 
+                                    <Text style={[styleMenu.textBtn]}>Lembretes</Text>
+                                </Box>
+                            </Box>
+                        </Pressable>
+                        
+                        <Pressable onPress={() => navigate("Listar_Diario")}>
+                            <Box style={[styleMenu.cardBtn]}>
+                                <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
+                                    <IconAnt name="book" size={50} style={[styleMenu.iconBtn]} />
+                                </Box>
+                                <Box style={[styleMenu.boxTituloBtn]}>
+                                    <Text style={[styleMenu.textBtn]}>Diário</Text>
+                                </Box>
+                            </Box>
+                        </Pressable>
 
+            
+                        <Pressable>
+                            <Box style={[styleMenu.cardBtn]}>
+                                <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
+                                    <IconAwesome name="briefcase-medical" size={50} style={[styleMenu.iconBtn]} />
+                                </Box>
+                                <Box style={[styleMenu.boxTituloBtn]}>
+                                    <Text style={[styleMenu.textBtn]}>Medicamentos</Text>
+                                </Box>
+                            </Box>
+                            
+                        </Pressable>
                                 
-                            </Stack>
-                        </VStack>
+                            
                     </Box>
                     
                         
