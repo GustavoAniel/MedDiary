@@ -25,8 +25,6 @@ export default function Listar_Lembretes({navigation: {navigate}}){
                     <Text style={[styleLembrete.textTitulo]}>Lembretes</Text>
 
                     <Box style={[styleLembrete.groupCards]}>
-                        
-                        
 
                         <Lembrete tipoLembrete={'remedio'} titulo={'Tomar remédio'} descricao={'Tem que tomar o remédio que o Doutor Gabriel disse.'} periodo={'8 horas'} data={'19/04/2022'}/>
 

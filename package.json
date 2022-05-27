@@ -10,11 +10,15 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-aria/ssr": "^3.1.2",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/stack": "^6.2.1",
     "axios": "^0.26.1",
     "expo": "~44.0.0",
+    "expo-calendar": "~10.1.0",
+    "expo-linear-gradient": "~11.0.3",
     "expo-status-bar": "~1.2.0",
+    "expo-updates": "~0.11.7",
     "native-base": "^3.3.11",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -25,9 +29,7 @@
     "react-native-screens": "~3.10.1",
     "react-native-svg": "12.1.1",
     "react-native-vector-icons": "^9.1.0",
-    "react-native-web": "0.17.1",
-    "expo-linear-gradient": "~11.0.3",
-    "expo-calendar": "~10.1.0"
+    "react-native-web": "0.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

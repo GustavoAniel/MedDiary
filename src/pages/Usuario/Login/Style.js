@@ -10,6 +10,10 @@ const style = StyleSheet.create({
         width: '100%',
         maxWidth: 400,
         alignSelf: 'center'
+    },
+    btnLogin: {
+        width: 90,
+        height: 50
     }
 })
 

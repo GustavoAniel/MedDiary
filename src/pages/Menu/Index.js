@@ -8,6 +8,7 @@ import IconAwesome from 'react-native-vector-icons/FontAwesome5'
 import { LinearGradient } from 'expo-linear-gradient';
 
 
+
 const config = {
     dependencies: {
         "linear-gradient" : LinearGradient
@@ -22,11 +23,9 @@ export default function Menu({ navigation: { navigate }}){
                 <Box rounded={5} >
                     <Text style={[styleMenu.textWhiteTitulo]}>Bom dia Fulana!</Text>
 
-                    
-
-                    <Box style={[styleMenu.btnsMenu]}>
+            
+                    <Box style={[styleMenu.btnsMenu]}>  
                         
-
                         <Pressable onPress={() => navigate("Listar_Lembretes")}>
                             <Box style={[styleMenu.cardBtn]}>
                                 <Box style={[styleMenu.btn1]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
@@ -62,11 +61,7 @@ export default function Menu({ navigation: { navigate }}){
                             
                         </Pressable>
                                 
-                            
                     </Box>
-                    
-                        
-
                     
                 </Box>
             </Box>
