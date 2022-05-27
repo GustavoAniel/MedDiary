@@ -10,6 +10,9 @@ const style = StyleSheet.create({
       fontSize: 40,
       fontWeight: 'bold'
     },
+    textBranco: {
+        color: 'white',
+      },
     card: {
       backgroundColor: 'white',
       margin: 10,
