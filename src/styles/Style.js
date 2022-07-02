@@ -1,4 +1,9 @@
+import { LinearGradient } from "expo-linear-gradient";
 import { StyleSheet } from "react-native";
+
+const gradient = {
+    linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}
+}
 
 const style = StyleSheet.create({
     background: {
@@ -78,4 +83,40 @@ infoCard: {
 },
 })
 
-export {style, styleLembrete};
+const styleRegistro = StyleSheet.create({
+    groupCards: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    card: {
+        backgroundColor: 'white',
+        width: '90%',
+        height: 150,
+        shadowOffset: { width: 10, height: 1 },
+        shadowColor: 'black',
+        shadowOpacity: 1,
+    
+        elevation: 23,
+        flexDirection: 'row',
+        marginVertical: 10
+    },   
+    textTitulo: {
+        color: '#535353',
+        fontSize: 20,
+        textAlign: 'center',
+        marginVertical: 25,
+        fontWeight: 'bold'
+    },
+    miniCard: {
+        flex: 1,
+        width: 50,
+        justifyContent: 'center',
+        backgroundColor: 'black'
+    },
+    iconeTag: {
+        alignSelf: 'center',
+        color:'white'
+    },
+})
+
+export {style, styleLembrete, styleRegistro, gradient};

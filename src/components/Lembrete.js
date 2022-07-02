@@ -4,12 +4,12 @@ import { NativeBaseProvider, Box, ScrollView, VStack, Stack, Button } from "nati
 import IconAwesome from 'react-native-vector-icons/FontAwesome5';
 import IconIonicons from 'react-native-vector-icons/Ionicons';
 import IconMaterial from 'react-native-vector-icons/MaterialIcons';
-import  IconMaterial2  from "react-native-vector-icons/MaterialCommunityIcons";
+import IconMaterial2  from "react-native-vector-icons/MaterialCommunityIcons";
 
 export default function Lembrete({titulo, descricao, tipoLembrete, data, periodo}){
     return(
         <Box style={[styleLembrete.card]}>
-            <Box style={[styleLembrete.tagCard]} bg={{ linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}}}>
+            <Box style={[styleLembrete.tagCard]} bg={gradient}>
                 {tipoLembrete == 'remedio' ? <IconAwesome name="capsules" style={[styleLembrete.iconeTag]} size={23} /> : <IconMaterial2 name="bell" style={[styleLembrete.iconeTag]} size={23} />}
             </Box>
 
@@ -43,4 +43,10 @@ export default function Lembrete({titulo, descricao, tipoLembrete, data, periodo
 
         </Box>
     )
+}
+
+const gradient = {
+    linearGradient: {
+        colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]
+    }
 }

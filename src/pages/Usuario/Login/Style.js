@@ -12,8 +12,14 @@ const style = StyleSheet.create({
         alignSelf: 'center'
     },
     btnLogin: {
-        width: 90,
+        width: 100,
         height: 50
+    },
+    btnCad: {
+        width: 100,
+        height: 50,
+        borderWidth: 1,
+        borderColor: '#fff'
     }
 })
 

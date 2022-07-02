@@ -17,25 +17,23 @@ export default function App({ navigation: { goBack } }){
   }, [])
 
   return(
-    <NativeBaseProvider>
-      <Box style={[style.background]}>
-        <Box style={[style.card]}>
-          <Text style={[style.text]}>Id: {usuario?.idUsuario}</Text>
-          <Text style={[style.text]}>Nome: {usuario?.nomeCompleto}</Text>
-          <Text style={[style.text]}>User: {usuario?.username}</Text>
-          <Text style={[style.text]}>Senha: {usuario?.password}</Text>
-          <Text style={[style.text]}>Data: {usuario?.dataCriacao}</Text>
-        </Box>
-       
-        <Pressable onPress={() => goBack()}>
-          <Box style={[style.btn1]}>
-            <Text style={[style.textWhite]}>Voltar</Text>
-          </Box>
-        </Pressable>
-        
-
+    <Box style={[style.background]}>
+      <Box style={[style.card]}>
+        <Text style={[style.text]}>Id: {usuario?.idUsuario}</Text>
+        <Text style={[style.text]}>Nome: {usuario?.nomeCompleto}</Text>
+        <Text style={[style.text]}>User: {usuario?.username}</Text>
+        <Text style={[style.text]}>Senha: {usuario?.password}</Text>
+        <Text style={[style.text]}>Data: {usuario?.dataCriacao}</Text>
       </Box>
-    </NativeBaseProvider>
+      
+      <Pressable onPress={() => goBack()}>
+        <Box style={[style.btn1]}>
+          <Text style={[style.textWhite]}>Voltar</Text>
+        </Box>
+      </Pressable>
+      
+
+    </Box>
   )
 }
 

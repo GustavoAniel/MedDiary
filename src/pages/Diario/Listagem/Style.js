@@ -40,7 +40,15 @@ const style = StyleSheet.create({
     },  
     arrowIcon: {
         color: '#BEACAC'
-    }
+    },
+    groupCards: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    iconeTag: {
+        alignSelf: 'center',
+        color:'white'
+    },
 })
 
 export default style;
