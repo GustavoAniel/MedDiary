@@ -2,121 +2,135 @@ import { LinearGradient } from "expo-linear-gradient";
 import { StyleSheet } from "react-native";
 
 const gradient = {
-    linearGradient: {colors: ['#15D36D', '#15A5D3'], start: [1, 0], end: [0, 1]}
-}
+    linearGradient: {
+        colors: ["#15D36D", "#15A5D3"],
+        start: [1, 0],
+        end: [0, 1],
+    },
+};
 
 const style = StyleSheet.create({
     background: {
-      backgroundColor: '#032cfc',
-      flex: 1,
+        backgroundColor: "#032cfc",
+        flex: 1,
     },
     text: {
-      color: 'black',
-      fontSize: 40,
-      fontWeight: 'bold'
+        color: "black",
+        fontSize: 40,
+        fontWeight: "bold",
     },
     textBranco: {
-        color: 'white',
-      },
+        color: "white",
+    },
     card: {
-      backgroundColor: 'white',
-      margin: 10,
-      borderRadius: 20,
-    }
-})
+        backgroundColor: "white",
+        margin: 10,
+        borderRadius: 20,
+    },
+});
 
 const styleLembrete = StyleSheet.create({
-  groupCards: {
-    flex: 1,
-    alignItems: 'center'
-},
-card: {
-    backgroundColor: 'white',
-    width: '90%',
-    height: 150,
-    shadowOffset: { width: 10, height: 1 },
-    shadowColor: 'black',
-    shadowOpacity: 1,
+    groupCards: {
+        flex: 1,
+        alignItems: "center",
+    },
+    card: {
+        backgroundColor: "white",
+        width: "90%",
+        height: 150,
+        shadowOffset: { width: 10, height: 1 },
+        shadowColor: "black",
+        shadowOpacity: 1,
 
-    elevation: 23,
-    flexDirection: 'row',
-    marginVertical: 10
-},
-textTitulo: {
-    color: 'white',
-    fontSize: 35,
-    textAlign: 'center',
-    marginVertical: 25,
-    fontWeight: 'bold'
-},
-tagCard: {
-    width: '13%',
-    height: '100%',
-    justifyContent: 'center'
-},
-textCardTitulo: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    color: '#535353',
-    fontSize: 15,
+        elevation: 23,
+        flexDirection: "row",
+        marginVertical: 10,
+    },
+    textTitulo: {
+        color: "white",
+        fontSize: 35,
+        textAlign: "center",
+        marginVertical: 25,
+        fontWeight: "bold",
+    },
+    tagCard: {
+        width: "13%",
+        height: "100%",
+        justifyContent: "center",
+    },
+    textCardTitulo: {
+        textAlign: "center",
+        fontWeight: "bold",
+        color: "#535353",
+        fontSize: 15,
+    },
+    iconGeral: {
+        flexDirection: "row",
+    },
 
-},
-iconGeral: {
-    flexDirection: 'row'
-},
+    textIcons: {
+        color: "#ACACAC",
+    },
 
-textIcons: {
-    color: '#ACACAC'
-},
-
-textDisc: {
-    color: '#BEACAC',
-    alignSelf: 'center',
-    marginTop: 15
-},
-iconeTag: {
-    alignSelf: 'center',
-    color:'white'
-},
-infoCard: {
-    flex: 1
-},
-})
+    textDisc: {
+        color: "#BEACAC",
+        alignSelf: "center",
+        marginTop: 15,
+    },
+    iconeTag: {
+        alignSelf: "center",
+        color: "white",
+    },
+    infoCard: {
+        flex: 1,
+    },
+});
 
 const styleRegistro = StyleSheet.create({
     groupCards: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: "center",
     },
     card: {
-        backgroundColor: 'white',
-        width: '90%',
+        backgroundColor: "white",
+        width: "90%",
         height: 150,
         shadowOffset: { width: 10, height: 1 },
-        shadowColor: 'black',
+        shadowColor: "black",
         shadowOpacity: 1,
-    
+
         elevation: 23,
-        flexDirection: 'row',
-        marginVertical: 10
-    },   
+        flexDirection: "row",
+        marginVertical: 10,
+    },
     textTitulo: {
-        color: '#535353',
+        color: "#535353",
         fontSize: 20,
-        textAlign: 'center',
-        marginVertical: 25,
-        fontWeight: 'bold'
+        marginVertical: 20,
+        fontWeight: "bold",
+    },
+    textDesc: {
+        color: "#BEACAC",
+        alignSelf: "center",
+    },
+    textIcons: {
+        color: "#ACACAC",
     },
     miniCard: {
         flex: 1,
         width: 50,
-        justifyContent: 'center',
-        backgroundColor: 'black'
+        justifyContent: "center",
+        backgroundColor: "black",
+    },
+    iconGeral: { 
+        flexDirection: 'row',
+        justifyContent: "flex-end",
+        padding: 4
     },
     iconeTag: {
-        alignSelf: 'center',
-        color:'white'
+        alignSelf: "center",
+        color: "white",
     },
-})
+});
 
-export {style, styleLembrete, styleRegistro, gradient};
+export { style, styleLembrete, styleRegistro, gradient };
