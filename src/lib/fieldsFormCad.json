@@ -1,0 +1,35 @@
+
+{
+    "value": [
+        {
+            "id": "nome",
+            "name": "Nome Completo",
+            "label": "Nome Completo",
+            "type": "text"
+        },
+        {
+            "id": "email",
+            "name": "Email",
+            "label": "Email",
+            "type": "email"
+        },
+        {
+            "id": "cpf",
+            "name": "CPF",
+            "label": "CPF",
+            "type": "text"
+        },
+        {
+            "id": "usuario",
+            "name": "Usuario",
+            "label": "Usuário",
+            "type": "text"
+        },
+        {
+            "id": "senha",
+            "name": "Senha",
+            "label": "Senha",
+            "type": "password"
+        }
+    ]
+}
