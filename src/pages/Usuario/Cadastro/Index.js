@@ -26,7 +26,7 @@ export default function Cadastro({ navigation: { goBack } }) {
     });
 
     const handleSubmit = () => {
-        console.log(form);
+        console.log('Cadastro:',form);
     };
 
     return (
@@ -60,10 +60,8 @@ export default function Cadastro({ navigation: { goBack } }) {
                                         color="white"
                                         variant="underlined"
                                         type={field.type}
-                                        onChangeText={(evt) =>
-                                            setForm({
-                                                [field.id]: evt.target.value,
-                                            })
+                                        onChangeText={(value) =>
+                                            {setForm({...form, [field.id]: value}), console.log(form)}
                                         }
                                     />
                                     <FormControl.ErrorMessage>
@@ -76,7 +74,7 @@ export default function Cadastro({ navigation: { goBack } }) {
                                 <Button
                                     backgroundColor={"#15D36D"}
                                     style={[styleForm.btnLogin]}
-                                    onPress={() => null}
+                                    onPress={() => handleSubmit()}
                                 >
                                     Cadastrar
                                 </Button>
