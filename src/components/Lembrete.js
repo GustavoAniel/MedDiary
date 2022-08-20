@@ -20,7 +20,7 @@ export default function Lembrete({titulo, descricao, tipoLembrete, data, periodo
                     <Text style={[styleLembrete.textDisc]}>{descricao}</Text> 
                 </ScrollView>
                 
-                <Box style={[styleLembrete.icons]}>
+                <Box >
 
                     <VStack >
                         <Stack direction={"row"} justifyContent='space-between'>
