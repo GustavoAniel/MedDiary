@@ -20,8 +20,9 @@ const style = StyleSheet.create({
 
     barraMes: {
         backgroundColor: 'white',
-        padding: 5,
+        padding: 2,
         marginTop: 15,
+        marginBottom: 20,
         marginHorizontal: 20,
         borderRadius: 5,
         flexDirection: 'row',
